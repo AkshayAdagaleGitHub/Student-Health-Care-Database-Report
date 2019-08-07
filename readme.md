@@ -9,8 +9,8 @@ scope of already existing health care resources at UNC Charlotte.
 
 2. Scope
 As per our system design, our health care project features services including primary Medical Care, HIV Testing,
-Sports Medicine, Nurse Clinic, Digital Laboratory, Immunizations, Travel Medicine, Allergy Injections, Psychiatric Care 
-and Physical Therapy. The entire unit comprises of departments of health care featuring doctors and services provided, 
+Sports Medicine, Nurse Clinic, Digital Laboratory, Immunizations, Travel Medicine, Allergy Injections, Psychiatric Care
+and Physical Therapy. The entire unit comprises of departments of health care featuring doctors and services provided,
 management and maintenance featuring the daily check and resource availability factors. To be able to store and maintain data in
 normalized form, we have maintained tables for users , which is then being referenced by patient and doctor classes. 
 To enable check on patient’s insurance availability, we have created an insurance class. This class is correlated
@@ -22,10 +22,7 @@ we have a class visit_information that will be updated each time the patient vis
 reason of visit details. As there are some standard tests to be carried out for particular symptoms, and for each patient 
 the result will be varied, thus, we have maintained three distinct yet co-related tables of visit_clinic_care_information comprising of
 symptoms, prescriptions and suggested diagnosis, visit_information_tests to list down particular tests as per symptoms stated 
-in clinic care table and tests table that will maintain records for all tests of each patient. Lastly, we have a billing table that adds up service charges and doctor fees thereby
-reflecting the final bill in bills table. The table will have a status field indicating the bill being paid or unpaid, and each 
-time the value will be set as and when user makes the payment.The tables created and structure of each with dedicated 
-attributes is shown as follows:
+in clinic care table and tests table that will maintain records for all tests of each patient. Lastly, we have a billing table that adds up service charges and doctor fees thereby reflecting the final bill in bills table. The table will have a status field indicating the bill being paid or unpaid, and each time the value will be set as and when user makes the payment.The tables created and structure of each with dedicated attributes is shown as follows:
 
 Following tables created:
  ● usertype
@@ -111,3 +108,4 @@ Following tables created:
 ● visit_information_test_relation
     ○ visit_information_id
     ○ test_id
+````
